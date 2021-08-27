@@ -5,3 +5,10 @@ spring:
     username: root
     password: Aup6g/t;3
     initialize: true
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
