@@ -16,6 +16,6 @@ spring:
       #tenant_indentifier_resolver:
       #multi_tenant_connection_provider:
   redis:
-    host: localhost
+    host: 127.0.0.1
     port: 6379
     password: Smtjh2020
