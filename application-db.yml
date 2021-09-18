@@ -12,3 +12,10 @@ spring:
     properties:
       hibernate:
         show_sql: true
+      #multiTenancy: SCHEMA
+      #tenant_indentifier_resolver:
+      #multi_tenant_connection_provider:
+  redis:
+    host: localhost
+    port: 6379
+    password: Smtjh2020
