@@ -12,9 +12,9 @@ spring:
     properties:
       hibernate:
         show_sql: true
-      #multiTenancy: SCHEMA
-      #tenant_indentifier_resolver:
-      #multi_tenant_connection_provider:
+        multiTenancy: SCHEMA
+        tenant_identifier_resolver: com.lyra.common.tenant.CurrentTenantIdentifierResolverImpl
+        multi_tenant_connection_provider: com.lyra.common.tenant.MultiTenantConnectionProviderImpl
   redis:
     host: 127.0.0.1
     port: 6379
