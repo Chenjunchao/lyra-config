@@ -16,6 +16,6 @@ spring:
         tenant_identifier_resolver: com.lyra.common.tenant.CurrentTenantIdentifierResolverImpl
         multi_tenant_connection_provider: com.lyra.common.tenant.MultiTenantConnectionProviderImpl
   redis:
-    host: 127.0.0.1
+    host: ${LYRA_REDIS_IP}
     port: 6379
     password: Smtjh2020
