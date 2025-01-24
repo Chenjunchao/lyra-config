@@ -2,3 +2,8 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher # workaround for swagger nullpointer exception
+jwt:
+  public:
+    key: ${LYRA_PUBLIC_KEY}
+  private:
+    key: ${LYRA_PRIVATE_KEY}
