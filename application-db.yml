@@ -6,7 +6,6 @@ spring:
     password: ${MYSQL_ROOT_PASSWORD}
     initialize: false
   jpa:
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
       ddl-auto: none
     properties:
