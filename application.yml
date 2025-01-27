@@ -1,7 +1,12 @@
 spring:
+  main:
+    keep-alive: true
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher # workaround for swagger nullpointer exception
+  threads:
+    virtual:
+      enabled: true
 jwt:
   public:
     key: ${LYRA_PUBLIC_KEY}
